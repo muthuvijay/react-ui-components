@@ -1,0 +1,28 @@
+.select-box{
+
+  &__head{
+    padding: 10px;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__items{
+    display: none;
+    padding: 10px 0;
+    border: 1px solid grey;
+    border-top : 0;
+    &.show{
+      display: block;
+    }
+
+    &__item{
+      cursor: pointer;
+      padding:5px 0;
+      border-bottom:1px solid grey;
+      &:last-child{
+        border:0
+      }
+    }
+  }
+}
